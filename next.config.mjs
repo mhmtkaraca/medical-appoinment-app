@@ -2,8 +2,7 @@
 const nextConfig = {
   images: {
     disableStaticImages: true,
-    domains: ["localhost"],
-    remotePatterns: [
+        remotePatterns: [
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
