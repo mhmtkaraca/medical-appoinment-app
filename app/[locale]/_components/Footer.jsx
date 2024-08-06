@@ -57,7 +57,7 @@ const Footer = async () => {
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
             <a
-              href="https://www.facebook.com/profile.php?id=61559283804361"
+              href="https://www.facebook.com/share/Ka5Cibrd9xpn3FDq/?mibextid=LQQJ4d"
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:text-gray-700/75"
@@ -80,7 +80,7 @@ const Footer = async () => {
 
           <li>
             <a
-              href="https://www.instagram.com/healthclinictr/?igsh=bXVncjZ1OW16OTln"
+              href="https://www.instagram.com/healthhubturkiye?igsh=d2dsZmlhN3RkazBr"
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:text-gray-700/75"

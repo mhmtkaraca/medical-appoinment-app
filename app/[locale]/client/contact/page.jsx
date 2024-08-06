@@ -77,17 +77,17 @@ const Page = () => {
             <div>
               <div className="mt-4 leading-relaxed text-white/90">
                 <a className="flex">
-                  <MapPin className="mr-1" /> London
+                  <MapPin className="mr-1" /> {t("locationLabel")}
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
                 <a className="flex" href="tel:+908504802048">
-                  <PhoneCall className="mr-1" /> +90 850 480 20 48
+                  <PhoneCall className="mr-1" /> {t("phoneNumberLabel")}
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
                 <a className="flex" href="mailto:info@healthclinicturkiye.com">
-                  <AtSign className="mr-1" /> info@healthclinicturkiye.com
+                  <AtSign className="mr-1" /> {t("emailAddressLabel")}
                 </a>
               </div>
             </div>
