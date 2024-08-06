@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: ["localhost", "res.cloudinary.com", "better-wealth-48913fa7ae.media.strapiapp.com", "pics.freeicons.io", "**.hearstapps.com"],
+    
     disableStaticImages: true,
         remotePatterns: [
       {
