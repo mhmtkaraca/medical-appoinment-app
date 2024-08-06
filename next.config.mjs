@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    disableStaticImages: true,
+    domains: ["localhost"],
     remotePatterns: [
       {
         protocol: "https",
@@ -41,6 +43,7 @@ const nextConfig = {
         pathname: "**",
       },
     ],
+    
   },
 };
 
