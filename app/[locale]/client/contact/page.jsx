@@ -7,6 +7,8 @@ import { useState } from "react";
 import { createInquri } from "../../_utils/GlobalApi";
 import GoogleMap from "../../_components/GoogleMap";
 import { useI18n } from "@/locales/client";
+import call from "../../../public/images/call.jpg";
+import health from "../../../public/images/healthclinicturkey-favicon-color.png";
 
 const Page = () => {
   const t = useI18n();
@@ -51,7 +53,7 @@ const Page = () => {
           <Image
             alt="hospital-call"
             fill
-            src="/call.jpg"
+            src={call}
             className="absolute inset-0 h-full w-full object-cover opacity-40"
           />
 
