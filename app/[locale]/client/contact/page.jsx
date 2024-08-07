@@ -60,13 +60,13 @@ const Page = () => {
           <div className="hidden lg:relative lg:block lg:p-12">
             <Link className="block text-white accent-white" href="/">
               <span className="sr-only">Home</span>
-              <Image
+              {/* <Image
                 src="/healthclinicturkey-favicon-color.png"
                 alt="Health Clinic Turkey Logo"
                 width={300}
                 height={100}
                 className="h-42"
-              />
+              /> */}
             </Link>
 
             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
