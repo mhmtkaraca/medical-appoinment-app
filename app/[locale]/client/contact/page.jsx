@@ -7,8 +7,8 @@ import { useState } from "react";
 import { createInquri } from "../../_utils/GlobalApi";
 import GoogleMap from "../../_components/GoogleMap";
 import { useI18n } from "@/locales/client";
-import call from "../../../public/images/call.jpg";
-import health from "../../../public/images/healthclinicturkey-favicon-color.png";
+import call from "../../../../public/images/call.jpg";
+
 
 const Page = () => {
   const t = useI18n();
