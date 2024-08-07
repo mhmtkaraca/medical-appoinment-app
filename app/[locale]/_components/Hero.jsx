@@ -1,6 +1,7 @@
 import Image from "next/image";
 import WhatsAppContact from "./WhatsAppContact";
 import { getI18n } from "@/locales/server";
+import doctors from "../../../public/images/doctors.jpg";
 
 const Hero = async () => {
   const t = await getI18n();
@@ -11,8 +12,8 @@ const Hero = async () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
             <Image
-              alt=""
-              src="/doctors.jpg"
+              alt="doctors"
+              src={doctors}
               width={800}
               height={800}
               className="absolute inset-0 h-full w-full rounded-3xl object-cover"

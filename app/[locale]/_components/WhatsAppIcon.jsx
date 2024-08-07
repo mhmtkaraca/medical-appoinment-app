@@ -1,4 +1,5 @@
 import Image from "next/image";
+import whastaspp from "../../../public/images/whatsapp.png";
 
 const WhatsAppIcon = () => {
   const phoneNumber = "+44 7708 590838";
@@ -14,10 +15,11 @@ const WhatsAppIcon = () => {
         rel="noopener noreferrer"
       >
         <Image
-          src="/whatsapp.png"
+          src={whastaspp}
           alt="contact us on whatsapp"
           width={25}
           height={25}
+          
         />
       </a>
     </div>
