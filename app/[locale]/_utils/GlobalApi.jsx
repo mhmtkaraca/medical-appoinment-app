@@ -86,11 +86,14 @@ const getBeforeAfter = async () => {
   const data = await fetchData(`/before-afters?populate=*`);
   return data.data;
 };
-
 const createInquri = async (inquriData) => {
   const data = await fetchData("/inquries", {
     method: "POST",
     body: JSON.stringify(inquriData),
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
   });
   return data.data;
 };
