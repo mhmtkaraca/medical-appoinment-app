@@ -35,10 +35,10 @@ const Page = () => {
     setSuccess(null);
 
     try {
-      const createdInquri = await createInquri({ data: formData });
+       await createInquri({ data: formData });
       setSuccess("Enquiry created successfully!");
     } catch (error) {
-      setError("Error creating enquiry.");
+      setError("Error creating enquiry." + error.message);
     } finally {
       setLoading(false);
     }

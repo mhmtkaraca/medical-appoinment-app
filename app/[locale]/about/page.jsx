@@ -23,7 +23,7 @@ const About = async () => {
 
               <div className="mt-4 sm:mt-8">
                 <Link
-                  href="contact"
+                  href="client/contact"
                   className="inline-block rounded-md bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-primary/90 focus:outline-none focus:ring"
                 >
                  {t("contactUs")}
