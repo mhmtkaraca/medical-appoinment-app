@@ -38,7 +38,8 @@ const Page = () => {
        await createInquri({ data: formData });
       setSuccess("Enquiry created successfully!");
     } catch (error) {
-      setError("Error creating enquiry." + error.message);
+      setError("Error creating enquiry." );
+      console.error("Error creating enquiry.", error);
     } finally {
       setLoading(false);
     }
