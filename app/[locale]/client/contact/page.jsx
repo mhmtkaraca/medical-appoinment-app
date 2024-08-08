@@ -39,8 +39,8 @@ const Page = () => {
       setSuccess("Enquiry created successfully!");
       console.log("Enquiry created successfully!");
     } catch (error) {
-      setError("Error creating enquiry." );
       console.log("Error creating enquiry.", error);
+      setError("Error creating enquiry." );
     } finally {
       setLoading(false);
     }
