@@ -29,11 +29,11 @@ export default function Page() {
     <div>
       <Hero />
       <Categories />
-      <HospitalList />
+      {/* <HospitalList /> */}
       <BeforeAfterComponent />
       <Testimonials />
       <MainGallery title="Gallery" />
-      <MainGallery title="Doctors" />
+      {/* <MainGallery title="Doctors" /> */}
       <OurServices />
     </div>
   );

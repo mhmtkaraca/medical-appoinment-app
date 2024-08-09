@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getI18n } from "@/locales/server";
 import { getCategoryById } from "../../_utils/GlobalApi";
+import screenshot from "../../../../public/images/Screenshot.png";
 
 const CategoryDetail = async ({ params }) => {
   const { categoriesId } = params;
@@ -23,13 +24,13 @@ const CategoryDetail = async ({ params }) => {
 
   return (
     <div className="flex justify-center flex-col items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center header-bg-color bg-curved">
-        <div className="text-white p-2 sm:w-1/3">
+      <div className="flex flex-col md:flex-row justify-center items-center header-bg-color bg-curved  ">
+        <div className="text-white p-2 sm:w-1/3 ">
           <h1 className="text-4xl mb-4">{categoryName}</h1>
           <p className="text-xl">{nameText}</p>
         </div>
-        <div className="bg-white rounded-lg shadow-lg mt-12 sm:w-1/3 sm:w-1/1 flex">
-          <div className="w-2/3 p-8">
+        <div className="bg-white  shadow-lg mt-12 sm:w-1/3 sm:w-1/1 flex ">
+          <div className="w-2/3 p-8 ">
             <h2 className="text-2xl font-bold mb-4">
               {t("getFreeConsultation")}
             </h2>
@@ -104,7 +105,7 @@ const CategoryDetail = async ({ params }) => {
           </div>
           <div className="w-1/2 flex">
             <Image
-              src={"/Screenshot.png"}
+              src={screenshot}
               alt="Image"
               width={870}
               height={1000}
