@@ -23,6 +23,10 @@ const OurServices = dynamic(() => import("./_components/OurServices"), {
   loading: () => <p>Loading...</p>
 });
 
+const ClientModalComponent = dynamic(() => import('../[locale]/_components/ClientModalComponent'), {
+  ssr: false,
+  loading: () => <p>Loading modal...</p>
+});
 export default function Page() {
 
   return (
@@ -35,6 +39,7 @@ export default function Page() {
       <MainGallery title="Gallery" />
       <MainGallery title="Doctors" />
       <OurServices />
+      <ClientModalComponent />
     </div>
   );
 }
