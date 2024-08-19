@@ -22,19 +22,24 @@ const MainGallery = dynamic(() => import("./_components/MainGallery"), {
 const OurServices = dynamic(() => import("./_components/OurServices"), {
   loading: () => <p>Loading...</p>
 });
+const Soon = dynamic(() => import("./_components/soon"), {
+  loading: () => <p>Loading...</p>
+});
 
 export default function Page() {
 
   return (
     <div>
-      <Hero />
-      <Categories />
+      {/* <Hero />
+      <Categories /> */}
       {/* <HospitalList /> */}
-      <BeforeAfterComponent />
+      {/* <BeforeAfterComponent />
       <Testimonials />
-      <MainGallery title="Gallery" />
+      <MainGallery title="Gallery" /> */}
       {/* <MainGallery title="Doctors" /> */}
-      <OurServices />
+      {/* <OurServices /> */}
+      <Soon />
+
     </div>
   );
 }

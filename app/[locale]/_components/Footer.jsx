@@ -25,7 +25,7 @@ const Footer = async () => {
           {t("yourHealth")}
         </p>
 
-        <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+        {/* <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
             <Link
               className="text-gray-700 transition hover:text-gray-700/75"
@@ -52,7 +52,7 @@ const Footer = async () => {
               {t("contact")}
             </Link>
           </li>
-        </ul>
+        </ul> */}
 
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
