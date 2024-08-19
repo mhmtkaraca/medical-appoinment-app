@@ -84,7 +84,7 @@ const Page = () => {
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
                 <a className="flex" href="tel:+908504802048">
-                  <PhoneCall className="mr-1" /> +90 850 480 20 48
+                  <PhoneCall className="mr-1" /> +44 7388 806014
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
