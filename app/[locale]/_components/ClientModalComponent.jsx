@@ -9,16 +9,13 @@ const ClientModalComponent = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const hasSeenPopup = localStorage.getItem("hasSeenPopup");
+    
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+      localStorage.setItem("hasSeenPopup", "true");
+    }, 5000);
 
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setIsModalOpen(true);
-        localStorage.setItem("hasSeenPopup", "true");
-      }, 5000);
-
-      return () => clearTimeout(timer);
-    }
+    return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
