@@ -94,6 +94,7 @@ const HamburgerMenu = ({ logoData }) => {
             </Link>
 
             <Link href="client/contact">
+          {/*  */}
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 text-gray-500 transition hover:text-primary"

@@ -53,7 +53,7 @@ const Footer = async () => {
             </Link>
           </li>
         </ul>
-
+{/*  */}
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
             <a
