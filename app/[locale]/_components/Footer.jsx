@@ -47,7 +47,7 @@ const Footer = async () => {
           <li>
             <Link
               className="text-gray-700 transition hover:text-gray-700/75"
-              href="contact"
+              href="client/contact"
             >
               {t("contact")}
             </Link>

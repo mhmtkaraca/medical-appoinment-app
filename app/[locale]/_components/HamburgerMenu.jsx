@@ -93,7 +93,7 @@ const HamburgerMenu = ({ logoData }) => {
               </li>
             </Link>
 
-            <Link href="/contact">
+            <Link href="client/contact">
           {/*  */}
               <li
                 onClick={() => setMenuOpen(false)}
