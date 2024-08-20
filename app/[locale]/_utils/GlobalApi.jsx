@@ -10,7 +10,7 @@ const fetchData = async (endpoint, options = {}) => {
     cache: "no-store",
     headers: {
       "Content-Type": "application/json",
-      'Referrer-Policy': 'no-referrer-when-downgrade'
+      'Referrer-Policy': 'no-referrer-when-downgrade',
       Authorization: `Bearer ${API_KEY}`,
     },
   };
