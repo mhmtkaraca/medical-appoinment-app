@@ -11,15 +11,15 @@ const Header = async () => {
 
   return (
     <header className="bg-white">
-      <div className="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {logoData[0] && (
           <Link href="/">
             <span className="sr-only">Home</span>
             <Image
               src={logoData[0].attributes?.logo?.data?.attributes?.url}
               alt="Health Clinic Turkey Logo"
-              width={200}
-              height={50}
+              width={350}
+              height={100}
               className="h-12"
             />
           </Link>
