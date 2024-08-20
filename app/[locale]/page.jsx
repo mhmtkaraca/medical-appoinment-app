@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import CalendlyBadge from "./_components/CalendlyBadge";
 
 const Hero = dynamic(() => import("./_components/Hero"), {
   loading: () => <p>Loading...</p>
@@ -30,16 +31,17 @@ const ClientModalComponent = dynamic(() => import('../[locale]/_components/Clien
 export default function Page() {
 
   return (
-    <div>
+    <>
+      <CalendlyBadge />
       <Hero />
       <Categories />
       <HospitalList />
       <BeforeAfterComponent />
       <Testimonials />
       <MainGallery title="Gallery" />
-      <MainGallery title="Doctors" />
+      {/* <MainGallery title="Doctors" /> */}
       <OurServices />
       <ClientModalComponent />
-    </div>
+    </>
   );
 }
