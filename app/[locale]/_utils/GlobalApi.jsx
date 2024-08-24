@@ -3,7 +3,7 @@ import {getCurrentLocale} from "../../../locales/server";
 
 const API_KEY = process.env.NEXT_PUBLIC_STRAPI_API_KEY;
 
-const BASE_URL = "https://healthclinicturkiye.com/api";
+const BASE_URL = "https://localhost/api";
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
