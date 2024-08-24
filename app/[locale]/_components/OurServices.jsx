@@ -20,7 +20,7 @@ const OurServices = async () => {
       </div>
       <div className="mt-8 flex justify-center flex-wrap gap-5">
         {data.map((item) => (
-          <div key={item.id} className="flex flex-col text-center mx-auto">
+          <div key={item.id} className="flex flex-col text-center mx-auto items-center">
             <Image
               className="transition ease-in-out delay-150 border rounded-full aspect-square object-cover hover:-translate-y-1  hover:border-4 hover:border-primary hover:scale-110 duration-300"
               src={item?.attributes?.image?.data?.attributes?.url}

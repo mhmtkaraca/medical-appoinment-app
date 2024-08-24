@@ -34,13 +34,13 @@ export default function Page() {
     <>
       <CalendlyBadge />
       <Hero />
+      <OurServices />
       <Categories />
       <HospitalList />
       <BeforeAfterComponent />
       <Testimonials />
       <MainGallery title="Gallery" />
       {/* <MainGallery title="Doctors" /> */}
-      <OurServices />
       <ClientModalComponent />
     </>
   );
