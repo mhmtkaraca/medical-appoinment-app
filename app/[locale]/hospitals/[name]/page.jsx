@@ -5,8 +5,9 @@ import { getI18n } from "@/locales/server";
 
 const HospitalDetails = async ({ params }) => {
   const hospital = await getHospitalsByName(params?.name);
-  const { attributes } = hospital;
-  const imageUrl = attributes.image.data.attributes.formats.large.url;
+  const { attributes } = await hospital;
+  const imageUrl = attributes.image.data.attributes.formats.small?.url || null;
+  console.log("hospital", attributes.image.data.attributes.formats);
   const t = await getI18n();
 
   const getImageUrl = (imageArray) => {

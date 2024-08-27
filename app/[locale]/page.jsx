@@ -30,15 +30,15 @@ export default function Page() {
 
   return (
     <div>
-      {/* <Hero />
-      <Categories /> */}
-      {/* <HospitalList /> */}
-      {/* <BeforeAfterComponent />
-      <Testimonials />
-      <MainGallery title="Gallery" /> */}
+      <Hero />
+      <Categories />
+      <HospitalList />
+      <BeforeAfterComponent />
+      {/* <Testimonials /> */}
+      <MainGallery title="Gallery" />
       {/* <MainGallery title="Doctors" /> */}
-      {/* <OurServices /> */}
-      <Soon />
+      <OurServices />
+      {/* <Soon /> */}
 
     </div>
   );
