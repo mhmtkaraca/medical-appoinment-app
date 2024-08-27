@@ -83,8 +83,8 @@ const Page = () => {
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
-                <a className="flex" href="tel:+908504802048">
-                  <PhoneCall className="mr-1" /> +44 7388 806014 
+                <a className="flex" href="tel:+44 7468 105412">
+                  <PhoneCall className="mr-1" /> +44 7468 105412 
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">

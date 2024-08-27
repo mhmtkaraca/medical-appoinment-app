@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const WhatsAppIcon = () => {
-  const phoneNumber = "+447388806014";
+  const phoneNumber = "++447468105412";
   const message = "Hi there! I have a question...";
   const whatsAppUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
