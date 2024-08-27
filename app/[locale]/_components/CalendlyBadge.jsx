@@ -30,7 +30,7 @@ const CalendlyBadge = () => {
           }
         }}
       >
-        Schedule time with me
+        Book for event
       </button>
       <div
         id="calendly-widget"
