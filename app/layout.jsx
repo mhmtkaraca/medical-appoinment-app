@@ -3,7 +3,6 @@ import "./[locale]/globals.css";
 import Header from "./[locale]/client/Header";
 import WhatsAppIcon from "./[locale]/_components/WhatsAppIcon";
 import Footer from "./[locale]/_components/Footer";
-import Head from "next/head";
 
 const roboto = Roboto({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -43,6 +42,21 @@ export default function RootLayout({ children }) {
           />
         </noscript>
       {/* End Meta Pixel Code */}
+      {/* Google Tag (gtag.js) */}
+      <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GTW475WFDN"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GTW475WFDN');
+            `,
+          }}
+        />
       </head>
       <body className={roboto.className}>
         <Header />
