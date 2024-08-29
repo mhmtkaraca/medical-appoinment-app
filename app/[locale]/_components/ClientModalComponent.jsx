@@ -24,7 +24,7 @@ const ClientModalComponent = () => {
 
   return (
     <Modal isOpen={isModalOpen} onClose={handleClose}>
-      <Image src={popUp} width={600} height={800} alt="popup" />
+      <Image src={popUp} width={400} height={600} alt="popup" />
     </Modal>
   );
 };

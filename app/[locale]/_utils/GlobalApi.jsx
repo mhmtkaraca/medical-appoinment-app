@@ -13,7 +13,6 @@ const fetchData = async (endpoint, options = {}) => {
       'Referrer-Policy': 'no-referrer-when-downgrade',
       Authorization: `Bearer ${API_KEY}`,
     },
-    mode: "no-cors",
   };
 
   const finalOptions = { ...defaultOptions, ...options };
