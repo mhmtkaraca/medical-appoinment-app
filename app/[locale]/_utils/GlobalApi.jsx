@@ -11,9 +11,9 @@ const fetchData = async (endpoint, options = {}) => {
     headers: {
       "Content-Type": "application/json",
       'Referrer-Policy': 'no-referrer-when-downgrade',
-      rejectUnauthorized: false,
       Authorization: `Bearer ${API_KEY}`,
     },
+    mode: "no-cors",
   };
 
   const finalOptions = { ...defaultOptions, ...options };
