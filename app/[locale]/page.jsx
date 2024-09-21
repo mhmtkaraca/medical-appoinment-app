@@ -28,6 +28,9 @@ const ClientModalComponent = dynamic(() => import('../[locale]/_components/Clien
   ssr: false,
   loading: () => <p>Loading modal...</p>
 });
+const HealthAcenta = dynamic(() => import('./_components/HealthAcenta'), {
+  loading: () => <p>Loading...</p>
+});
 export default function Page() {
 
   return (
@@ -42,6 +45,7 @@ export default function Page() {
       <MainGallery title="Gallery" />
       {/* <MainGallery title="Doctors" /> */}
       {/* <ClientModalComponent /> */}
+      <HealthAcenta />
     </>
   );
 }

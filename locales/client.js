@@ -11,6 +11,9 @@ const {
   en: () => import("./en"),
   de: () => import("./de"),
   fr: () => import("./fr"),
+  ar: () => import("./ar"),
+  it: () => import("./it"),
+  tr: () => import("./tr"),
 });
 
 export {

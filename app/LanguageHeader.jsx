@@ -28,6 +28,9 @@ const LanguageHeader = () => {
       <option value="en">EN 🇬🇧</option>
       <option value="de">DE 🇩🇪</option>
       <option value="fr">FR 🇫🇷</option>
+      <option value="ar">AR 🇸🇦</option>
+      <option value="it">IT 🇮🇹</option>
+      <option value="tr">TR 🇹🇷</option>
     </select>
   );
 };
