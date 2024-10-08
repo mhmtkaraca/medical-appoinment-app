@@ -17,7 +17,7 @@ export default {
     home: "Accueil", 
     gallery: "Galerie",
     hospitals: "Hôpitaux",
-    ourHospitals: "Nos Hôpitaux",
+    ourHospitals: "Institutions sous contrat",
     ourServices: "Nos Services",
     atHealthClinic: "À la clinique de santé, nos services sont toujours centrés sur le patient. Nous veillons à ce que vous receviez les soins de la plus haute qualité tout au long de votre traitement, fournis par des médecins spécialistes de la manière la plus appropriée.",
     testimonials: "Lisez les avis fiables de nos clients",

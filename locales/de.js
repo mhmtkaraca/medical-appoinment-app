@@ -17,7 +17,7 @@ export default {
   home: "Startseite", 
   gallery: "Galerie", 
   hospitals: "Krankenhäuser",
-  ourHospitals: "Unsere Krankenhäuser",
+  ourHospitals: "Vertragsinstitutionen",
   ourServices: "Unsere Dienstleistungen",
   atHealthClinic: "In der Health Clinic sind unsere Dienstleistungen immer patientenorientiert. Wir stellen sicher, dass Sie während Ihrer Behandlung die bestmögliche Versorgung durch Fachärzte auf die geeignetste Weise erhalten.",
   testimonials: "Lesen Sie vertrauenswürdige Bewertungen von unseren Kunden",

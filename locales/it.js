@@ -17,7 +17,7 @@ export default {
     home: "Home",
     gallery: "Galleria",
     hospitals: "Ospedali",
-    ourHospitals: "I nostri Ospedali",
+    ourHospitals: "Istituzioni Convenzionate",
     ourServices: "I nostri Servizi",
     atHealthClinic: "Nella nostra clinica, i nostri servizi sono sempre incentrati sul paziente. Garantiamo che riceverai la massima qualità di cura durante il trattamento, fornita da medici specialisti nel modo più appropriato.",
     testimonials: "Leggi le recensioni affidabili dei nostri clienti",

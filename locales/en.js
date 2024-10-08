@@ -17,7 +17,7 @@ export default {
   home: "Home", 
   gallery: "Gallery",
   hospitals: "Hospitals",
-  ourHospitals: "Our Hospitals",
+  ourHospitals: "Contracted Institutions",
   ourServices: "Our ",
   atHealthClinic: "At Health Clinic, our services are always patient-centered. We ensure that you receive the highest quality care throughout your treatment, provided by specialist physicians in the most appropriate manner.",
   testimonials: "Read Trusted Reviews From Our Customers",

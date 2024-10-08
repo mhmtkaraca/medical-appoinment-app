@@ -17,7 +17,7 @@ export default {
     home: "Anasayfa",  
     gallery: "Galeri",  
     hospitals: "Hastaneler",  
-    ourHospitals: "Bizim Hastanelerimiz",  
+    ourHospitals: "Anlaşmalı Kurumlar",  
     ourServices: "Hizmetlerimiz",  
     atHealthClinic: "Health Clinic'te, hizmetlerimiz her zaman hasta odaklıdır. Tedavi süresince, uzman doktorlar tarafından en uygun şekilde sunulan en yüksek kalitede bakımı almanızı sağlıyoruz.",  
     testimonials: "Müşterilerimizin Güvenilir Yorumlarını Okuyun",  
