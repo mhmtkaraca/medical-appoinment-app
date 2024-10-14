@@ -44,7 +44,7 @@ export default function Page() {
       <Testimonials />
       <MainGallery title="Gallery" />
       {/* <MainGallery title="Doctors" /> */}
-      {/* <ClientModalComponent /> */}
+      <ClientModalComponent />
       <HealthAcenta />
     </>
   );

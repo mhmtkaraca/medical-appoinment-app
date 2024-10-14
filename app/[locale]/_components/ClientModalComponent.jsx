@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
 import Image from "next/image";
-import popUp from "../../../public/popUp.jpeg";
+import popUp from "../../../public/PopUp2.jpeg";
 
 const ClientModalComponent = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
