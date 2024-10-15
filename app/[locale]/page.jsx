@@ -35,7 +35,7 @@ export default function Page() {
 
   return (
     <>
-      {/* <CalendlyBadge /> */}
+      <CalendlyBadge />
       <Hero />
       <OurServices />
       <Categories />

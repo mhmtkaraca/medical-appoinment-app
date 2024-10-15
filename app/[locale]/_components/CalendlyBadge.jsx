@@ -47,7 +47,7 @@ const CalendlyBadge = () => {
           zIndex: 1000,
         }}
       >
-        <InlineWidget url="https://calendly.com/manage-healthclinicturkiye/london-dental-meetup" />
+        <InlineWidget url="https://calendly.com/manage-healthclinicturkiye/manchester-dental-meetup" />
         <button
           style={{
             position: 'absolute',
