@@ -32,7 +32,7 @@ const Hero = async () => {
               {t("revolutionaryFacilities")}
             </p>
             <WhatsAppContact
-              phoneNumber="+447388806014"
+              phoneNumber="+905333276604"
               message="Hi there! I have a question..."
             />
           </div>
