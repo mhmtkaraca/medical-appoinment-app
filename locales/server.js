@@ -8,7 +8,9 @@ const { getI18n, getScopedI18n, getStaticParams,getCurrentLocale } = createI18nS
   fr: () => import("./fr"),
   ar: () => import("./ar"),
   it: () => import("./it"),
-  tr: () => import("./tr")
+  tr: () => import("./tr"),
+  pt: () => import("./pt"),
+  ro: () => import("./ro"),
 });
 
 export {

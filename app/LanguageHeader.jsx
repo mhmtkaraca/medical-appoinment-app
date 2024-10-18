@@ -31,6 +31,8 @@ const LanguageHeader = () => {
       <option value="ar">AR 🇸🇦</option>
       <option value="it">IT 🇮🇹</option>
       <option value="tr">TR 🇹🇷</option>
+      <option value="pt">PT 🇵🇹</option>
+      <option value="ro">RO 🇷🇴</option>
     </select>
   );
 };
