@@ -2,7 +2,7 @@ import Image from "next/image";
 import whastaspp from "../../../public/images/whatsapp.png";
 
 const WhatsAppIcon = () => {
-  const phoneNumber = "+44 7708 590838";
+  const phoneNumber = "+447708590838";
   const message = "Hi there! I have a question...";
   const whatsAppUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
