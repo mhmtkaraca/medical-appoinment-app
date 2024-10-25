@@ -41,7 +41,7 @@ export default function Page() {
       <Categories />
       <HospitalList />
       <BeforeAfterComponent />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <MainGallery title="Gallery" />
       {/* <MainGallery title="Doctors" /> */}
       <ClientModalComponent />

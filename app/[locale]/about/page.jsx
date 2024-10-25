@@ -47,9 +47,9 @@ const About = async () => {
           <p className="mt-4 text-gray-600">{t("cultureContent")}</p>
         </div>
 
-        <Testimonials />
+        {/* <Testimonials /> */}
 
-        <ul className="mt-12 flex justify-center gap-6 md:gap-8">
+        {/* <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
             <a
               href="https://www.facebook.com/profile.php?id=61559283804361"
@@ -118,7 +118,7 @@ const About = async () => {
               </svg>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
