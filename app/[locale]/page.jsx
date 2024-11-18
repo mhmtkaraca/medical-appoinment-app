@@ -35,7 +35,7 @@ export default function Page() {
 
   return (
     <>
-      <CalendlyBadge />
+      {/* <CalendlyBadge /> */}
       <Hero />
       <OurServices />
       <Categories />
@@ -44,7 +44,7 @@ export default function Page() {
       {/* <Testimonials /> */}
       <MainGallery title="Gallery" />
       {/* <MainGallery title="Doctors" /> */}
-      <ClientModalComponent />
+      {/* <ClientModalComponent /> */}
       <HealthAcenta />
     </>
   );
