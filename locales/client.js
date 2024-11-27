@@ -16,6 +16,8 @@ const {
   tr: () => import("./tr"),
   pt: () => import("./pt"),
   ro: () => import("./ro"),
+  fi: () => import("./fi"),
+  el: () => import("./el"),
 });
 
 export {

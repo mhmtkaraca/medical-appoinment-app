@@ -103,12 +103,12 @@ const CategoryDetail = async ({ params }) => {
             </form>
           </div>
           <div className="w-1/2 flex">
-            <Image
+            {/* <Image
               src={"/Screenshot.png"}
               alt="Image"
               width={870}
               height={1000}
-            />
+            /> */}
           </div>
         </div>
       </div>

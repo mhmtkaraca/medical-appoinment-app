@@ -11,6 +11,8 @@ const { getI18n, getScopedI18n, getStaticParams,getCurrentLocale } = createI18nS
   tr: () => import("./tr"),
   pt: () => import("./pt"),
   ro: () => import("./ro"),
+  fi: () => import("./fi"),
+  el: () => import("./el"),
 });
 
 export {

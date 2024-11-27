@@ -100,6 +100,18 @@ const Footer = async () => {
               </svg>
             </a>
           </li>
+          <li>
+              <a href="https://www.youtube.com/@HealthClinicTurkiye" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:text-gray-700/75">
+              <span className="sr-only">YouTube</span>
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.486 2 2 6.486 2 12c0 5.515 4.486 10 10 10s10-4.485 10-10c0-5.514-4.486-10-10-10zm-2.5 15.5v-11l8.5 5.5-8.5 5.5z"/> 
+              </svg>
+            </a>
+
+
+
+
+          </li>  
         </ul>
       </div>
       <p className="ml-2 text-xs">

@@ -31,11 +31,17 @@ const ClientModalComponent = dynamic(() => import('../[locale]/_components/Clien
 const HealthAcenta = dynamic(() => import('./_components/HealthAcenta'), {
   loading: () => <p>Loading...</p>
 });
+
+const Video = dynamic(() => import('./_components/Video'), {
+  loading: () => <p>Loading...</p>
+});
+
 export default function Page() {
 
   return (
     <>
       {/* <CalendlyBadge /> */}
+      <Video/>
       <Hero />
       <OurServices />
       <Categories />
