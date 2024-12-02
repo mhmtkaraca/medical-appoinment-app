@@ -18,8 +18,8 @@ const Header = async () => {
             <Image
               src={logoData[0].attributes?.logo?.data?.attributes?.url}
               alt="Health Clinic Turkey Logo"
-              width={350}
-              height={100}
+              width={230}
+              height={150}
               className="h-12"
             />
           </Link>
