@@ -1,32 +1,46 @@
-import React from "react";
-import "animate.css";
+import React from 'react';
 
-const HeroSection = () => (
-  <section className="bg-white py-16 px-6">
-    <div className="container mx-auto text-center">
-      <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 text-black">
-        Your Treatment Advisor
-      </h1>
-      
-      <ul className="space-y-4 text-lg sm:text-xl md:text-2xl mb-6 text-primary font-light">
-        <li className="animate__animated animate__fadeIn animate__delay-1.1s animate__fadeInUp">
-          Find the right medical solution wherever you are
-        </li>
-        <li className="animate__animated animate__fadeIn animate__delay-1.2s animate__fadeInUp">
-          TOP-rated hospitals and doctors
-        </li>
-        <li className="animate__animated animate__fadeIn animate__delay-1.4s animate__fadeInUp">
-          Expert medical advisory board
-        </li>
-        <li className="animate__animated animate__fadeIn animate__delay-1.6s animate__fadeInUp">
-          Statistics-based choice
-        </li>
-        <li className="animate__animated animate__fadeIn animate__delay-1.8s animate__fadeInUp">
-          Door-to-door service
-        </li>
+const TreatmentAdvisor = () => {
+  return (
+    <div style={styles.container}>
+      <h1 style={styles.title}>Your Treatment Advisor</h1>
+      <p style={styles.subtitle}>
+        <strong>Find the right medical solution wherever you are</strong>
+      </p>
+      <ul style={styles.list}>
+        <li>TOP-rated hospitals and doctors</li>
+        <li>Expert medical advisory board</li>
+        <li>Statistics-based choice</li>
+        <li>Door-to-door service</li>
       </ul>
     </div>
-  </section>
-);
+  );
+};
 
-export default HeroSection;
+const styles = {
+  container: {
+    fontFamily: 'Arial, sans-serif',
+    lineHeight: '1.8',
+    color: '#333',
+    padding: '40px 220px', // Daha büyük padding ve soldan boşluk
+    marginLeft: '50px', // Soldan uzaklaştırma
+  },
+  title: {
+    fontSize: '54px', // Başlığı büyüt
+    fontWeight: 'bold',
+    marginBottom: '20px',
+  },
+  subtitle: {
+    fontSize: '32px', // Alt başlığı büyüt
+    fontWeight: '600',
+    marginBottom: '25px',
+    color: '#0069ff'
+  },
+  list: {
+    listStyleType: 'disc',
+    paddingLeft: '40px', // Listeyi biraz daha sağa kaydır
+    fontSize: '22px', // Liste öğelerini büyüt
+  },
+};
+
+export default TreatmentAdvisor;
