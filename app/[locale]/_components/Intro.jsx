@@ -2,12 +2,14 @@ import React from 'react';
 
 const TreatmentAdvisor = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Your Treatment Advisor</h1>
-      <p style={styles.subtitle}>
+    <div className="font-sans text-gray-800 px-6 md:px-12 lg:px-56 py-10">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+        Your Treatment Advisor
+      </h1>
+      <p className="text-lg md:text-2xl lg:text-3xl font-semibold text-blue-600 mb-8">
         <strong>Find the right medical solution wherever you are</strong>
       </p>
-      <ul style={styles.list}>
+      <ul className="list-disc pl-6 md:pl-10 space-y-4 text-base md:text-lg lg:text-xl">
         <li>TOP-rated hospitals and doctors</li>
         <li>Expert medical advisory board</li>
         <li>Statistics-based choice</li>
@@ -15,32 +17,6 @@ const TreatmentAdvisor = () => {
       </ul>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    fontFamily: 'Arial, sans-serif',
-    lineHeight: '1.8',
-    color: '#333',
-    padding: '40px 220px', // Daha büyük padding ve soldan boşluk
-    marginLeft: '50px', // Soldan uzaklaştırma
-  },
-  title: {
-    fontSize: '54px', // Başlığı büyüt
-    fontWeight: 'bold',
-    marginBottom: '20px',
-  },
-  subtitle: {
-    fontSize: '32px', // Alt başlığı büyüt
-    fontWeight: '600',
-    marginBottom: '25px',
-    color: '#0069ff'
-  },
-  list: {
-    listStyleType: 'disc',
-    paddingLeft: '40px', // Listeyi biraz daha sağa kaydır
-    fontSize: '22px', // Liste öğelerini büyüt
-  },
 };
 
 export default TreatmentAdvisor;
