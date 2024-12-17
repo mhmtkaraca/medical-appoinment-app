@@ -111,7 +111,32 @@ const Footer = async () => {
 
 
 
-          </li>  
+          </li> 
+          <li>
+            <a
+              href="https://www.trustpilot.com/review/healthclinicturkiye.com"
+              rel="noreferrer"
+              target="_blank"
+              className="text-gray-700 transition hover:text-gray-700/75"
+            >
+              <span className="sr-only">Trustpilot</span>
+              <svg
+                className="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0 1.8a8.2 8.2 0 100 16.4 8.2 8.2 0 000-16.4zm-.6 11.4l-3.6 2.4 1.2-4.2-3.6-2.4h4.2L12 6l1.8 3.6h4.2l-3.6 2.4 1.2 4.2-3.6-2.4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+
+
         </ul>
       </div>
       <p className="ml-2 text-xs">

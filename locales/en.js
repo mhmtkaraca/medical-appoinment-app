@@ -25,8 +25,14 @@ export default {
   ourVision: "Our Vision",
   ourMission: "Our Mission",
   ourCulture: "Our Culture",
-  visionContent: "Our health clinic is one of the Medicinity companies. Like the other businesses within Medicinity, our clinic aims to be a successful and high-quality solution partner in the healthcare tourism industry. We offer a full range of aesthetic operations, dental treatments, and hair transplant procedures, all under the supervision of professional doctors and well-trained staff. We provide 24/7 support whenever you need it, both during and after the procedure.",
-  missionContent: "Our health clinic has grown from a commitment to providing differentiated healthcare solutions for our customers, prioritizing quality, trust, and diversity. We are dedicated to meeting and exceeding the full spectrum of our customers' expectations—from the comfort of their homes to their safe return home—by offering high-level support and continuous care. We advocate for everyone who chooses our services, helping them heal, feel better, and enhance their quality of life.",
+  visionContent:`To be a global leader in health tourism, setting new standards in patient satisfaction and trust by combining medical excellence with superior service quality.`,
+  missionContent:`	To provide access to world-class healthcare services through a reliable, seamless, and patient-focused process.
+	•	To offer personalized solutions that cater to each patient’s needs, providing comprehensive support throughout the treatment process.
+	•	To uphold trust, transparency, and professionalism in every interaction.
+
+At Health Clinic we understand the importance of high-quality healthcare services and the trust required for seeking treatment abroad. With our expert team and years of experience, we are committed to delivering a safe, efficient, and seamless experience for every patient.
+
+Discover the difference in healthcare with us. Health Clinic always prioritizes your health.`,
   cultureContent: "Our health clinic strives to create a culture that empowers honest, supportive, and high-quality healthcare services. We are passionate about our customers and believe that communication and empathy are essential in helping them achieve their health goals. We value how each new customer contributes to our culture. We enable our company partners to bring fresh perspectives and cutting-edge methods to their services, and we consistently assess and meet our clients' reasonable expectations.",
   treatments: "Our Treatments",
   getFreeConsultation: "Get a Free Consultation",
@@ -61,6 +67,8 @@ export default {
   internalServerError: "Internal Server Error",
   errorApology: "We apologize for the inconvenience. Please try again later.",
   tryAgain: "Try Again",
-  aboutText:"Our health clinic is one of the Medicinity companies. Like the other businesses within Medicinity, our health clinic aims to be a successful and high-quality solution partner in the healthcare tourism industry.",
+  aboutText:`Health Clinic is a leading health tourism company with headquarters in Istanbul and London. Under the leadership of the esteemed academician and founder, Prof. Dr. Nihan Ünaltuna, we connect patients worldwide with top-tier healthcare services, offering a seamless experience throughout their treatment journey.
+
+With a robust infrastructure built on medical expertise and global collaborations, serves as a reliable bridge between patients and world-class healthcare centers. Especially in Turkey’s leading cities such as Istanbul, Izmir, and Antalya, as well as other international destinations, we offer personalized solutions ranging from advanced medical treatments to wellness and recovery programs, all tailored to the unique needs of each patient.`,
   startChat: "Start a chat",
 };

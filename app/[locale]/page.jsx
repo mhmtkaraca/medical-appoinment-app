@@ -35,12 +35,16 @@ const HealthAcenta = dynamic(() => import('./_components/HealthAcenta'), {
 const Video = dynamic(() => import('./_components/Video'), {
   loading: () => <p>Loading...</p>
 });
+const Intro = dynamic(() => import('./_components/Intro'), {
+  loading: () => <p>Loading...</p>
+});
 
 export default function Page() {
 
   return (
     <>
       {/* <CalendlyBadge /> */}
+      <Intro />
       <Video/>
       <Hero />
       <OurServices />
