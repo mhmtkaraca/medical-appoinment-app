@@ -16,12 +16,12 @@ const BeforeAfterComponent = async () => {
         {data &&
           data.map((beforeAfter) => (
             <>
-              {/* {console.log(beforeAfter)}
-              {console.log(beforeAfter.attributes.imagebefore.data.attributes.url)} */}
+              {/* {console.log("beforeAfter",beforeAfter.atributes)} */}
+              {console.log(beforeAfter.attributes.imagebefore.data?.attributes.url)}
               <BeforeAfter
                 key={beforeAfter.id}
-                imageBefore={beforeAfter.attributes.imagebefore.data.attributes.url}
-                imageAfter={beforeAfter.attributes.imageafter.data.attributes.url}
+                imageBefore={beforeAfter.attributes.imagebefore.data?.attributes.url}
+                imageAfter={beforeAfter.attributes.imageafter.data?.attributes.url}
               />
             </>
           ))}
