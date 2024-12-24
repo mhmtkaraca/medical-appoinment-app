@@ -2,18 +2,52 @@ import React from 'react';
 
 const TreatmentAdvisor = () => {
   return (
-    <div className="font-sans text-gray-800 px-6 md:px-12 lg:px-56 py-10">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-        Your Treatment Advisor
-      </h1>
-      <p className="text-lg md:text-2xl lg:text-3xl font-semibold text-blue-600 mb-8">
-        <strong>Find the right medical solution wherever you are</strong>
-      </p>
-      <ul className="list-disc pl-6 md:pl-10 space-y-4 text-base md:text-lg lg:text-xl">
-        <li>TOP-rated hospitals and doctors</li>
-        <li>Expert medical advisory board</li>
-        <li>Statistics-based choice</li>
-        <li>Door-to-door service</li>
+    <div className="bg-gray-50 rounded-lg max-w-6xl mx-auto p-10 sm:p-14">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          Your Treatment Advisor
+        </h1>
+        <p className="text-xl sm:text-2xl text-blue-600 font-medium">
+          Find the right medical solution wherever you are
+        </p>
+      </div>
+
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <li className="flex items-center bg-white p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+          <div className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold">
+            🌟
+          </div>
+          <p className="ml-6 text-gray-700 font-medium text-lg">
+            TOP-rated hospitals and doctors
+          </p>
+        </li>
+
+        <li className="flex items-center bg-white p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+          <div className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold">
+            👩‍⚕️
+          </div>
+          <p className="ml-6 text-gray-700 font-medium text-lg">
+            Expert medical advisory board
+          </p>
+        </li>
+
+        <li className="flex items-center bg-white p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+          <div className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold">
+            📊
+          </div>
+          <p className="ml-6 text-gray-700 font-medium text-lg">
+            Statistics-based choice
+          </p>
+        </li>
+
+        <li className="flex items-center bg-white p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+          <div className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold">
+            🚪
+          </div>
+          <p className="ml-6 text-gray-700 font-medium text-lg">
+            Door-to-door service
+          </p>
+        </li>
       </ul>
     </div>
   );

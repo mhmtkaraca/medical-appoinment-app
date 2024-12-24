@@ -7,7 +7,7 @@ const HospitalDetails = async ({ params }) => {
   const hospital = await getHospitalsByName(params?.name);
   // console.log(hospital);
   const { attributes } = hospital;
-  const imageUrl = attributes.image.data.attributes.formats.large.url;
+  const imageUrl = attributes.image.data.attributes.formats?.medium?.url;
   const t = await getI18n();
 
   const getImageUrl = (imageArray) => {

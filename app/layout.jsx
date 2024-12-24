@@ -58,6 +58,12 @@ export default function RootLayout({ children }) {
           }}
         />
         {/* Google Tag Manager */}
+        {/* TrustBox Script */}
+        <script
+          type="text/javascript"
+          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          async
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

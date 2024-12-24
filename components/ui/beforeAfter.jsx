@@ -7,6 +7,7 @@ const BeforeAfter = ({ imageBefore, imageAfter }) => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isVertical, setIsVertical] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,6 +18,12 @@ const BeforeAfter = ({ imageBefore, imageAfter }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Determine if the image is vertical or horizontal
+  const handleImageLoad = (event) => {
+    const { naturalWidth, naturalHeight } = event.target;
+    setIsVertical(naturalHeight > naturalWidth);
+  };
 
   const handleMove = (event) => {
     if (!isDragging) return;
@@ -64,7 +71,9 @@ const BeforeAfter = ({ imageBefore, imageAfter }) => {
       onTouchEnd={handleMouseUp}
     >
       <div
-        className="relative w-full max-w-[400px] aspect-[77/55] m-auto overflow-hidden select-none border"
+        className={`relative w-full max-w-[400px] aspect-[77/55] m-auto overflow-hidden select-none border ${
+          isVertical ? "h-full" : "aspect-[77/55]"
+        }`}
         onMouseMove={!isMobile ? handleMove : undefined}
         onMouseDown={!isMobile ? handleMouseDown : undefined}
         onPointerEnter={!isMobile ? handleMouseDown : undefined}
@@ -73,16 +82,30 @@ const BeforeAfter = ({ imageBefore, imageAfter }) => {
         onTouchStart={isMobile ? handleMouseDown : undefined}
         onMouseLeave={handleMouseUp}
       >
-        <Image fill priority alt="image-after" src={imageAfter} />
+        <Image
+          fill
+          priority
+          alt="image-after"
+          src={imageAfter}
+          onLoad={handleImageLoad}
+        />
         <div
           className="absolute top-0 left-0 right-0 w-full h-full overflow-hidden"
-          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
+          style={{
+            clipPath: isVertical
+              ? `inset(${100 - sliderPosition}% 0 0 0)`
+              : `inset(0 ${100 - sliderPosition}% 0 0)`,
+          }}
         >
           <Image fill priority alt="image-before" src={imageBefore} />
         </div>
         <div
           className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize transition"
-          style={{ left: `calc(${sliderPosition}% - 1px)` }}
+          style={{
+            left: isVertical
+              ? `calc(${sliderPosition}% - 1px)`
+              : `calc(${sliderPosition}% - 1px)`,
+          }}
         >
           <div className="absolute bg-white h-2 w-3 -left-1 top-[calc(50%-5px)]" />
         </div>

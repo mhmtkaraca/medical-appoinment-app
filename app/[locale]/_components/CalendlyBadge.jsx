@@ -4,29 +4,22 @@ import { InlineWidget } from 'react-calendly';
 
 const CalendlyBadge = () => {
   return (
-    <div style={{ position: 'fixed', bottom: '20px', left: '20px', zIndex: 1000 }}>
+    <div className="fixed bottom-5 left-5 z-50">
       <button
-        style={{
-          backgroundColor: '#0069ff',
-          color: '#ffffff',
-          border: 'none',
-          padding: '10px 20px',
-          borderRadius: '5px',
-          cursor: 'pointer',
-         
-        }}
+        className="bg-blue-600 text-white border-none p-2 rounded cursor-pointer"
         onClick={() => {
           const calendlyWidget = document.getElementById('calendly-widget');
           if (calendlyWidget) {
             calendlyWidget.style.display = 'block';
-            calendlyWidget.style.width = '70%';
-            calendlyWidget.style.height = '70%';
-            calendlyWidget.style.margin = 'auto';
-    calendlyWidget.style.position = 'fixed';
-    calendlyWidget.style.top = '0';
-    calendlyWidget.style.left = '0';
-    calendlyWidget.style.bottom = '0';
-    calendlyWidget.style.right = '0';
+            calendlyWidget.style.width = '90%';
+            calendlyWidget.style.height = '90%';
+            calendlyWidget.style.margin = '20px';
+            calendlyWidget.style.position = 'fixed';
+            calendlyWidget.style.top = '50%';
+            calendlyWidget.style.left = '50%';
+            calendlyWidget.style.transform = 'translate(-50%, -50%)';
+            calendlyWidget.style.zIndex = '1000';
+            calendlyWidget.style.padding = '20px';
           }
         }}
       >
@@ -34,30 +27,11 @@ const CalendlyBadge = () => {
       </button>
       <div
         id="calendly-widget"
-        style={{
-          display: 'none',
-          position: 'fixed',
-          bottom: '60px',
-          right: '20px',
-          width: '320px',
-          height: '430px',
-          backgroundColor: 'white',
-          border: '1px solid #ddd',
-          borderRadius: '5px',
-          zIndex: 1000,
-        }}
+        className="hidden fixed bottom-0 right-0 w-80 h-96 bg-white border border-gray-300 rounded-lg shadow-lg"
       >
         <InlineWidget url="https://calendly.com/manage-healthclinicturkiye/manchester-dental-meetup" />
         <button
-          style={{
-            position: 'absolute',
-            top: '10px',
-            right: '10px',
-            backgroundColor: 'transparent',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: '16px',
-          }}
+          className="absolute top-2 right-2 bg-transparent border-none cursor-pointer text-xl"
           onClick={() => {
             const calendlyWidget = document.getElementById('calendly-widget');
             if (calendlyWidget) {

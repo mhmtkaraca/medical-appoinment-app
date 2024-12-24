@@ -1,13 +1,19 @@
+import dynamic from "next/dynamic";
+
 import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "../_components/HamburgerMenu";
 import { getLogo } from "../_utils/GlobalApi";
 import { getI18n } from "@/locales/server";
 import LanguageHeader from "@/app/LanguageHeader";
+// import TrustBoxWidget from "../_components/TrustpilotWidget";
 
 const Header = async () => {
   const logoData = await getLogo();
   const t = await getI18n();
+  const  TrustpilotWidget = dynamic(() => import('./TrustpilotWidget'), {
+    loading: () => <p>Loading...</p>
+  });
 
   return (
     <header className="bg-white">
@@ -24,6 +30,9 @@ const Header = async () => {
             />
           </Link>
         )}
+        <div className="flex-1 flex justify-center">
+          <TrustpilotWidget />
+        </div>
         <div className="flex items-center">
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-md">

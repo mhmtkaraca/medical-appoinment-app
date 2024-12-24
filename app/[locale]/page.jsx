@@ -38,15 +38,26 @@ const Video = dynamic(() => import('./_components/Video'), {
 const Intro = dynamic(() => import('./_components/Intro'), {
   loading: () => <p>Loading...</p>
 });
-
+const  TrustpilotWidget = dynamic(() => import('./client/TrustpilotWidget'), {
+  loading: () => <p>Loading...</p>
+});
+const Card = dynamic(() => import('./_components/Card'), {
+  loading: () => <p>Loading...</p>
+});
+const InfoCard = dynamic(() => import('./_components/InfoCard'), {
+  loading: () => <p>Loading...</p>
+});
 export default function Page() {
 
   return (
     <>
-      {/* <CalendlyBadge /> */}
+      <CalendlyBadge />
+      {/* <TrustpilotWidget /> */}
       <Intro />
-      <Video/>
       <Hero />
+      <InfoCard />
+      <Card />
+      <Video/>
       <OurServices />
       <Categories />
       <HospitalList />
