@@ -16,7 +16,7 @@ const Steps = () => {
     },
     {
       title: 'Draw up an agreement',
-      description: 'And stay ready to start your medical journey with AiroMedical, with complete support from our travel manager.',
+      description: 'And stay ready to start your medical journey with HealthClinic, with complete support from our travel manager.',
     },
   ];
 

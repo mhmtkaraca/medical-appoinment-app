@@ -17,7 +17,7 @@ const About = async () => {
               {t("about")}
               </h2>
 
-              <p className="hidden  text-white/70 md:mt-6 md:block md:text-lg md:leading-relaxed">
+              <p className="hidden bg-black/70 text-white/70 md:mt-6 md:block md:text-lg md:leading-relaxed p-4 rounded">
               {t("aboutText")}
               </p>
 
